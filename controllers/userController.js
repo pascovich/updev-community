@@ -10,7 +10,7 @@ export default async function signup(req, res) {
       if (
         username.length == 8 &&
         nom.length >= 2 &&
-        password.length == 4 &&
+        password.length == 5 &&
         tel.length >= 1 &&
         email.length >= 4
       ) {
