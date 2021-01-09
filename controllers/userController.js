@@ -17,7 +17,6 @@ export default async function signup(req, res) {
         // TODO: implement regex
         let user = new UserModel();
         const passwords = await user.hashPassword(password);
-        console.log(passwords);
         user = await UserModel.create({
           nom,
           dateNaissance,
